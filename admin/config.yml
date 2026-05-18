@@ -3,7 +3,7 @@ backend:
   repo: flakash/my-brand-shop
   branch: main
   auth_type: implicit
-  app_id: Ov23liWrSz0KMoOaHJWl
+  app_id: 90981fc075688e9f29d62188f8d120ef0d1c50a7
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
