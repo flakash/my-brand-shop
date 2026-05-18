@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: flakash/my-brand-shop
   branch: main
 
 media_folder: "images/uploads"
@@ -11,6 +12,7 @@ collections:
     folder: "_products"
     create: true
     slug: "{{slug}}"
+    format: "json"
     fields:
       - { label: "পণ্যের নাম", name: "title", widget: "string" }
       - { label: "দাম (টাকা)", name: "price", widget: "number" }
