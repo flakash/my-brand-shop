@@ -1,1 +1,5 @@
+[build]
+  publish = "."
 
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
