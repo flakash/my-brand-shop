@@ -1,1 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
 
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "products"
+    label: "পণ্য সমূহ"
+    folder: "_products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "পণ্যের নাম", name: "title", widget: "string" }
+      - { label: "দাম (টাকা)", name: "price", widget: "number" }
+      - { label: "স্টক সংখ্যা", name: "stock", widget: "number" }
+      - { label: "বিবরণ", name: "description", widget: "text" }
+      - { label: "ছবি", name: "image", widget: "image", required: false }
+      - label: "ক্যাটাগরি"
+        name: "category"
+        widget: "select"
+        options: ["পোশাক", "ইলেকট্রনিক্স", "খাবার", "অন্যান্য"]
+      - { label: "পণ্য দেখাবে?", name: "published", widget: "boolean", default: true }
